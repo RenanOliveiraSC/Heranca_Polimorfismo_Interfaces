@@ -7,9 +7,7 @@ public class TesteLoja {
 		Livros livro1 = new Livros();
 		Cds Cds1 = new Cds();
 		Dvds dvd1 = new Dvds();
-		
-		
-		
+				
 		
 		livro1.setNome("O alquimista");
 		livro1.setPreco(50d);
