@@ -1,3 +1,4 @@
+package Banco;
 public class ContaCorrente {
 	
 	private String numero;
