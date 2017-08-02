@@ -12,15 +12,20 @@ public class Livros extends Produtos {
 		this.autor = autor;
 	}
 
+	public Livros() {
+
+	}
+
 	@Override
 	public String toString() {
 		return "Livro: " + getNome() + "  preço: R$ " + getPreco() + "  autor: " + getAutor();
 
 	}
+
 	public Livros(String autor, String nome, double preco) {
 		this.autor = autor;
 		this.getNome();
 		this.getPreco();
 	}
-	
+
 }
