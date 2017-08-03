@@ -34,6 +34,13 @@ public class Loja {
 
 		//Para buscar um produto e mostrar em qual posição ele está, deve ser usado como base o exercicio da mega sena, onde é criado
 		//um método para buscar.
+		
+		private static void buscarProduto(String[] Produto, int[] Posicao) {
+			int achou = 0; 
+			for(Integer Produto : Posicao){
+				
+			}
+		}
 		}
 	}
 
