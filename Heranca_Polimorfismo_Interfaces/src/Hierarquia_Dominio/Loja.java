@@ -36,4 +36,5 @@ public class Loja {
 		//um método para buscar.
 		}
 	}
-}
+
+
