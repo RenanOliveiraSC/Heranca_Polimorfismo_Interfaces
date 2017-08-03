@@ -11,16 +11,16 @@ public class Dvds extends Produtos {
 	public void setDuracao(String duracao) {
 		this.duracao = duracao;
 	}
+
 	@Override
 	public String toString() {
-		return "DVDs: "+getNome()+"  preço: R$ "+getPreco()+"  duração: "+getDuracao();
+		return "DVDs: " + getNome() + "  preço: R$ " + getPreco() + "  duração: " + getDuracao()
+				+ "   código de barras: " + getCodigoBarras();
 	}
-	
-	private void constr(String duracao, String nome, double preco) {
-		this.duracao = duracao;
-		this.getNome();
-		this.getPreco();
 
+	public Dvds(String nome, double preco, int codigoBarras, String duracao) {
+		super(nome, preco, codigoBarras);
+		this.duracao = duracao;
 	}
-	
+
 }

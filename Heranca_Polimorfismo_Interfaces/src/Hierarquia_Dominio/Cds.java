@@ -14,12 +14,13 @@ public class Cds extends Produtos {
 	
 	@Override
 	public String toString() {
-		return ("CDs: "+getNome()+"  preço: R$ "+getPreco()+"  numero de faixas: "+getNumeroFaixas());
+		return ("CDs: "+getNome()+"  preço: R$ "+getPreco()+"  numero de faixas: "+getNumeroFaixas()+"   código de barras: "+getCodigoBarras());
 	}
 
-	private void CONSTR(String numeroFaixas, String nome, double preço ) {
+	public Cds(String nome, double preco, int codigoBarras, String numeroFaixas) {
+		super(nome, preco, codigoBarras);
 		this.numeroFaixas = numeroFaixas;
-		this.getNome();
-		this.getPreco();
 	}
+
+
 }
