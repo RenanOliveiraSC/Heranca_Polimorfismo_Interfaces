@@ -32,7 +32,7 @@ public class Loja {
 						"\n"+cds1 + "\n"+cds2+
 						"\n"+dvd1 + "\n"+dvd2);
 		System.out.println();
-		System.out.println("A comparação entre os códigos de barras do DVD1 e DVD2 = "+dvd1.equals(dvd2));
+		System.out.println("A comparação entre os códigos de barras do DVD1 e DVD2: "+dvd1.equals(dvd2));
 	
 		
 		
