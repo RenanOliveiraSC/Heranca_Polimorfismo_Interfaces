@@ -2,11 +2,11 @@ package Hierarquia_Dominio;
 
 import java.text.DecimalFormat;
 
-public abstract class Produtos {
+public abstract class Produtos implements Comparable<Produtos>  {
 	DecimalFormat df = new DecimalFormat("#0.00");
 	private String nome;
 	private double preco;
-	private int codigoBarras;
+	private String codigoBarras;
 
 	public String getNome() {
 		return nome;
@@ -24,30 +24,37 @@ public abstract class Produtos {
 		this.preco = preco;
 	}
 
-	public int getCodigoBarras() {
+	public String getCodigoBarras() {
 		return codigoBarras;
 	}
 
-	public void setCodigoBarras(int codigoBarras) {
+	public void setCodigoBarras(String codigoBarras) {
 		this.codigoBarras = codigoBarras;
 	}
 
 
-	public Produtos(String nome, double preco, int codigoBarras) {
+	public Produtos(String nome, double preco, String codigoBarras) {
 		super();
 		this.nome = nome;
 		this.preco = preco;
 		this.codigoBarras = codigoBarras;
 	}
 	
+
+	@Override
+	public String toString() {
+		return "Nome: " + this.nome + ", Preço: " + this.preco;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
-		Produtos produto = (Produtos)obj;
-		if(codigoBarras == produto.getCodigoBarras()){
-			return true;
-		}else{ 
-			return false;
+		Produtos produtos = (Produtos) obj;
+		return this.codigoBarras.equals(produtos.getCodigoBarras());
+	}
+	
+	@Override
+	public int compareTo(Produtos o) {
+		return this.nome.compareTo(o.getNome());
 		}
 		
 	}
-}

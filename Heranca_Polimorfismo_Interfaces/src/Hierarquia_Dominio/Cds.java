@@ -17,7 +17,7 @@ public class Cds extends Produtos {
 		return ("CDs: "+getNome()+"  preço: R$ "+getPreco()+"  numero de faixas: "+getNumeroFaixas()+"   código de barras: "+getCodigoBarras());
 	}
 
-	public Cds(String nome, double preco, int codigoBarras, String numeroFaixas) {
+	public Cds(String nome, double preco, String codigoBarras, String numeroFaixas) {
 		super(nome, preco, codigoBarras);
 		this.numeroFaixas = numeroFaixas;
 	}

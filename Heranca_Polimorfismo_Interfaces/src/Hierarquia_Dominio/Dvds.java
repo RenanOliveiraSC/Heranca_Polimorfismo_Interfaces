@@ -18,7 +18,7 @@ public class Dvds extends Produtos {
 				+ "   código de barras: " + getCodigoBarras();
 	}
 
-	public Dvds(String nome, double preco, int codigoBarras, String duracao) {
+	public Dvds(String nome, double preco, String codigoBarras, String duracao) {
 		super(nome, preco, codigoBarras);
 		this.duracao = duracao;
 	}

@@ -18,7 +18,7 @@ public class Livros extends Produtos {
 
 	}
 
-	public Livros(String nome, double preco, int codigoBarras, String autor) {
+	public Livros(String nome, double preco, String codigoBarras, String autor) {
 		super(nome, preco, codigoBarras);
 		this.autor = autor;
 	}
